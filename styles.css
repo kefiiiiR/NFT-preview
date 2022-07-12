@@ -1,0 +1,130 @@
+/* TAGS */
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+}
+
+h1 {
+  font-size: 20px;
+  color: hsl(0, 0%, 100%);
+  margin-top: 0;
+}
+
+p {
+  font-size: 14px;
+  color: hsl(215, 51%, 70%);
+}
+
+a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+a:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+/* CLASS */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  min-width: 300px;
+  width: 20%;
+}
+
+.product-img {
+  flex: 100%;
+  border-radius: 10px 10px 0 0;
+  background-color: hsl(216, 50%, 16%);
+  position: relative;
+  display: flex;
+}
+
+.product-img-show {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: hsl(178, 100%, 50%);
+  padding: 36% 37%;
+  border-radius: 10px;
+}
+
+.product-img:hover .product-img-show {
+  opacity: 1;
+}
+
+.product-img-all {
+  width: 90%;
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+  opacity: 1;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.product-img:hover .product-img-all {
+    opacity: 0.3;
+}
+
+.product {
+  flex: 100%;
+  border-radius: 0 0 10px 10px;
+  padding: 6%;
+  background-color: hsl(216, 50%, 16%);
+}
+
+.eth-price {
+  color: hsl(178, 100%, 50%);
+  display: inline-block;
+  width: 49%;
+}
+
+.time-left {
+  display: inline-block;
+  text-align: right;
+  width: 49%;
+}
+
+.line {
+  border-top-width: 1px;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-color: hsl(215, 51%, 70%);
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+}
+
+.avatar img {
+  height: 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 100px;
+  border-color: white;
+  margin-right: 10px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  flex: 100%;
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
